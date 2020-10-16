@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6,p{
+    margin: 0 !important;
+    padding: 0;
+}
+.intro-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.main_logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main_logo-container img{
+    width: 50%;
+}
+.w3-sidebar{
+    background-color: black !important;
+    color: white !important;
+    width: 300px !important;
+    padding: 70px 0 0 40px;
+    font-size: 20px;
+}
+
+.w3-xxlarge{
+    position: absolute;
+    top: 4%;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    left: 3%;
+    cursor: pointer;
+}
+
+.intro-section-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.sidenav-main-container{
+    position: fixed;
+    margin: 3.8% 0 0 2%;
+    z-index: 5;
+}
+.intro-section-first-container{
+    position: relative;
+    background-image: url(./assets/images/whiteBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.stage_of_sleep-container{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stages-main-image {
+    display: flex;
+    justify-content: center;
+}
+.stages{
+    position: relative;
+}
+.stage-title{
+    padding-top: 0;
+}
+.intro-section{
+    width: 100%;
+}
+/* .stage_of_sleep-section{
+    height: 100%;
+    width: 100%;
+} */
+
+.bed-image img{
+    width: 100%;
+}
+.stages{
+    background-image: url(./assets/images/whitePaternBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.bed-image{
+    background-image: url(./assets/images/bed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.benefits_of_sleep-image{
+    background-image: url(./assets/images/blackPaternBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    
+}
+.first-section-paragraph p{
+    padding: 4% 0 0 6%;
+}
+.article {
+    width: 270px;
+}
+.main-title{
+    padding: 0 5% 0 3%;
+}
+.main-title p{
+    font-size: 45px;
+}
+.second-section-paragraph{
+    display: flex;
+    padding-top:5%;
+}
+.effects_of_lack_of_sleep-image{
+    background-image: url(./assets/images/whitePaternBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.body-image-container{
+    display: flex;
+    justify-content: center;
+}
+.body-image-child-container{
+    width: 18%;
+}
+.body-image-child-container img{
+    width: 100%;
+}
