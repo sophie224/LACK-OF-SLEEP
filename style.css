@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0;
     padding: 0;
@@ -100,12 +103,13 @@ a{
 .stages-main-image {
     display: flex;
     justify-content: center;
+    margin: 3% 0;
 }
 .stages{
     position: relative;
 }
 .stage-title{
-    padding-top: 0;
+    padding-top: 3%;
 }
 .intro-section{
     width: 100%;
@@ -232,4 +236,112 @@ a{
     padding: 15% 0;
     font-family: 'Roboto Bold';
     font-size: 20px;
+}
+
+
+/*player*/
+.video-player .controls .progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* .video-player {
+    z-index: 1000000;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  } */
+  .video-player{
+      width: 40%;
+  }
+  .video-player .play {
+    position: absolute;
+    /* top: -30px; */
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 25px;
+    /* margin-left: 15px; */
+    border-color: transparent transparent transparent #9E7978;
+    transition: 250ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+  }
+  .video-player .paused {
+    border-style: double;
+    border-width: 0 0 0 25px;
+  }
+  .video-player .controls {
+    width: 100%;
+  }
+  .video-player .controls .progress {
+    /* display: inline-block; */
+    cursor: pointer;
+    height: 12px;
+    position: relative;
+    width: 90%;
+    left: 7%;
+    background-color: transparent;
+    vertical-align: bottom;
+    border:1px solid #afafaf;
+    box-sizing: border-box;
+  }
+  .video-player .controls .progress .track {
+    background-color: #9E7978;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    height: 100%; 
+    width: 0;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+  .video-player .controls .progress .track:after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #753c3b;
+  }
+  .video-player .controls .progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .sound-button svg{
+    width: 5%;
+  }
+  body .background .overlay .main-content .sound-timing .timing, .read-more {
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: -55px;
+    left: -26px;
+  }
+  body .background .overlay .main-content .sound-timing .timing span {
+    font-family: "BPG Nino Mkhedruli Book", sans-serif;
+    font-size: 1.5em;
+    color: #9E7978;
+    width: 50px;
+    display: inline-block;
+}
+.controls{
+    display: inline-block;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
