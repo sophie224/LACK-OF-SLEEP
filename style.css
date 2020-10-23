@@ -1,10 +1,12 @@
 html {
     scroll-behavior: smooth;
   }
+  *:focus{
+      outline:none;
+  }
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Light' !important;
 }
 h1, h2, h3, h4, h5, h6,p{
     margin: 0 !important;
@@ -34,7 +36,9 @@ h1, h2, h3, h4, h5, h6,p{
     font-style: normal;
     font-display: swap;
 }
-    
+.activeChapter{
+    color:white !important;
+}
 .intro-section{
     position: relative;
     display: flex;
@@ -47,26 +51,46 @@ h1, h2, h3, h4, h5, h6,p{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100%;
 }
-.main_logo-container img{
+.lack_of_sleep-title-image,.scroll_down-image{
     width: 40%;
 }
+.lack_of_sleep-title-image{
+    margin-bottom: -6%;
+}
+.scroll_down-image{
+    margin-top: -6%;
+}
+.eye-image{
+    width: 30%;
+}
+.main_logo-container div img{
+    width: 100%;
+}
+/* .main_logo-container img{
+    width: 40%;
+} */
 .w3-sidebar{
-    background-color: black !important;
+    background-color: #1C1B1A!important ;
     color: white !important;
     width: 300px !important;
     padding: 70px 0 0 40px;
     font-size: 20px;
 }
-
+.w3-sidebar div{
+    font-family: 'Roboto Light';
+    color:#999999;
+    font-weight: bold;
+}
 .w3-xxlarge{
     position: absolute;
-    top: 4%;
+    top: 62px;
     z-index: 1;
     border: none;
     background: transparent;
-    left: 3%;
+    left: 67px;
     cursor: pointer;
 }
 #mySidebar{
@@ -75,7 +99,9 @@ h1, h2, h3, h4, h5, h6,p{
 
 .sidenav-main-container{
     position: fixed;
-    z-index: 5;
+    z-index: 1;
+    height: 1%;
+    width: 1%;
 }
 .intro-section-first-container{
     position: relative;
@@ -94,23 +120,26 @@ a{
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
 }
 .stages-main-image {
     display: flex;
     justify-content: center;
     margin: 3% 0;
+    width: 70%;
+}
+.stages-main-image img{
+    width: 100%;
+    height: 100%;
 }
 .stages{
     position: relative;
 }
-.stage-title{
-    padding-top: 3%;
-}
+
 .intro-section{
     width: 100%;
 }
@@ -151,20 +180,27 @@ a{
     
 }
 .first-section-paragraph p{
-    padding: 4% 0 0 6%;
+    padding: 3% 0 0 10%;
+    font-size: 25px;
+    font-family: 'Roboto Light';
 }
 .article {
-    width: 270px;
+    width: 23%;
+}
+.article p{
+    font-family: 'Roboto Light';
+    font-size:28px;
 }
 .main-title{
-    padding: 0 5% 0 3%;
+    padding: 0 5% 0 5%;
 }
 .main-title p{
-    font-size: 45px;
+    font-size: 70px;
+    font-family: 'Roboto Light';
 }
 .second-section-paragraph{
     display: flex;
-    padding-top:5%;
+    padding-top:9%;
 }
 .effects_of_lack_of_sleep-image{
     background-image: url(./assets/images/whitePaternBackground.png);
@@ -175,7 +211,24 @@ a{
     height: 100vh;
     position: relative;
 }
+.body_title-common-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .body-image-container{
+    width: 18%;
+    position: absolute;
+    
+}
+.body-image-container img{
+    width: 100%;
+    height: 100%;
+}
+/* .body-image-container{
     display: flex;
     justify-content: center;
 }
@@ -184,27 +237,68 @@ a{
 }
 .body-image-child-container img{
     width: 100%;
-}
-.body-common-container{
+} */
+/* .body-common-container{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    top: 10%;
+    top: 30%;
+    left: 33%;
+} */
+.body-common-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .body-common-child-container{
-    width: 70%;
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     position: relative;
 }
 .high_blood_pressure{
+    width: 100%;
+    position: absolute;
+    left: 60%;
+    margin-top: -11%;
+}
+.high_blood_pressure > p{
+    font-family: 'Roboto Light';
+    font-size: 43px ;
+    font-weight: bold;
+}
+.high_blood_pressure > div > p{
+    font-family: 'Roboto Light';
+    font-size: 28px;
+}
+/* .high_blood_pressure{
     position: absolute;
     left: 35%;
     top: 23%;
 }
 .high_blood_pressure h5{
     width: 52%;
+} */
+.common{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.effects_of_lack_of_sleep{
+    position: absolute;
+    left: 32%;
+    width: 15%;
+}
+.effects_of_lack_of_sleep img{
+    width: 100%;
+    height: 100%;
 }
 .effects_of_lack_of_sleep-footer,.intro-section-footer{
     position: absolute;
@@ -212,7 +306,27 @@ a{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 7%;
+    padding: 0 4%;
+}
+.intro-section-footer p, .stage-title p , .effects_of_lack_of_sleep-footer p{
+    font-size:20px;
+    font-family: 'Roboto Light';
+    font-weight: bold;
+}
+.effects_of_lack_of_sleep-footer p,.intro-section-footer p{
+    font-weight: bold;
+}
+.stage-order{
+    margin-top: 3%;
+}
+.stage-order p{
+    font-size: 50px;
+    font-family: 'Roboto Light' ;
+    font-weight: bold;
+    
+}
+.stage_4-image,.stage_3-image{
+    width: 55%;
 }
 .credits-container{
     position: relative;
@@ -227,7 +341,7 @@ a{
     color: white;
     width: 100%;
     display: flex;
-    padding: 7% 0 0 7%;
+    padding: 7% 0 0 4%;
 }
 .designe-container{
     padding-left: 10%;
@@ -235,60 +349,68 @@ a{
 .credit-title{
     padding: 15% 0;
     font-family: 'Roboto Bold';
-    font-size: 20px;
+    font-size: 37px;
+}
+.name{
+    font-size: 37px;
+    font-family: 'Roboto light';
 }
 
-
 /*player*/
+
 .video-player .controls .progress {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  /* .video-player {
-    z-index: 1000000;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-  } */
-  .video-player{
-      width: 40%;
-  }
-  .video-player .play {
-    position: absolute;
+}
+.progress{
+    margin-left: 3%;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-player{
+    width: 80%;
+    display: flex;
+}
+.video-player .play {
+    /* position: absolute; */
     /* top: -30px; */
     background: transparent;
     box-sizing: border-box;
     width: 0;
-    height: 25px;
+    height: 11px;
     /* margin-left: 15px; */
-    border-color: transparent transparent transparent #9E7978;
+    border-color: transparent transparent transparent black;
     transition: 250ms all ease;
     cursor: pointer;
     border-style: solid;
-    border-width: 12px 0 12px 20px;
-  }
-  .video-player .paused {
+    /* border-width: 12px 0 12px 20px; */
+    border-width: 5px 0 5px 11px;
+}
+.video-player .paused {
     border-style: double;
-    border-width: 0 0 0 25px;
-  }
-  .video-player .controls {
+    border-width: 0 0 0 11px;
+}
+.video-player .controls {
     width: 100%;
-  }
-  .video-player .controls .progress {
+}
+.video-player .controls .progress {
     /* display: inline-block; */
     cursor: pointer;
-    height: 12px;
+    height: 2px;
     position: relative;
-    width: 90%;
-    left: 7%;
+    width: 60%;
     background-color: transparent;
     vertical-align: bottom;
-    border:1px solid #afafaf;
+    background-color: #afafaf;
+    border-radius: 8px;
     box-sizing: border-box;
-  }
-  .video-player .controls .progress .track {
-    background-color: #9E7978;
+}
+.video-player .controls .progress .track {
+    background-color: black;
     position: absolute;
     /* top: 0; */
     left: 0;
@@ -301,25 +423,25 @@ a{
     transition: all 1s linear;
 }
 
-  .video-player .controls .progress .track:after {
+.video-player .controls .progress .track:after {
     content: "";
     display: inline-block;
-    width: 2px;
-    height: 2vh;
+    width: 6px;
+    height: 6px;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    background: #753c3b;
-  }
-  .video-player .controls .progress {
+    right: -5px;
+    top: -2px;
+    background: black;
+    border-radius: 100%;
+}
+
+.video-player .controls .progress {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  .sound-button svg{
-    width: 5%;
-  }
-  body .background .overlay .main-content .sound-timing .timing, .read-more {
+}
+
+body .background .overlay .main-content .sound-timing .timing, .read-more {
     display: inline-block;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -329,19 +451,70 @@ a{
     position: absolute;
     bottom: -55px;
     left: -26px;
-  }
-  body .background .overlay .main-content .sound-timing .timing span {
+}
+body .background .overlay .main-content .sound-timing .timing span {
     font-family: "BPG Nino Mkhedruli Book", sans-serif;
     font-size: 1.5em;
     color: #9E7978;
     width: 50px;
     display: inline-block;
 }
-.controls{
-    display: inline-block;
-}
+
 .main-content{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    /* margin-top: 3%; */
+}
+.back, .forward{
+    width: 20px;
+}
+.back img, .forward img{
+    width: 100%;
+}
+.pause_play_button_container{
+    display: flex;
+    padding-left: 8%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 15%;
+    width: 20px;
+}
+.sound_line{
+    background-color: gray;
+    width: 3px;
+}
+.active{
+    background-color:black;
+}
+.sound-button {
+    display: flex;
+    align-items: flex-end;
+}
+.first_line{
+    margin: 0 1px;
+    height: 8px;
+}
+.second_line{
+    margin: 0 1px;
+    height: 10px;
+}
+.third_line{
+    margin: 0 1px;
+    height: 12px;
+}
+.forth_line{
+    margin: 0 1px;
+    height: 14px;
+}
+
+.sound_line.active {
+    opacity:1;
+}
+.left-side-control{
+    display: flex;
+}
+.sound-timing{
+    margin-left: 15px;
 }

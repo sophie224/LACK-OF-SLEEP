@@ -4,6 +4,8 @@
     <title>LACK OF SLEEP</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -12,32 +14,32 @@
 <!-- sidebar  start -->
     <div class="sidenav-main-container">
         <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
-            <div>
+            <div class="chapters activeChapter" id="0">
                 <h6>Chapter 1</h6>
                 <a href="#introduction" >Introduction</a>
             </div>
             <br>
-            <div>
+            <div  class="chapters" id="1">
                 <h6>Chapter 2</h6>
                 <a href="#stages_of_sleep" >Stages of sleep</a>
             </div>
             <br>
-            <div>
+            <div class="chapters" id="2">
                 <h6>Chapter 3</h6>
                 <a href="#circadian_rhythm" >Circadian rhythm</a>
             </div>
             <br>
-            <div>
+            <div class="chapters" id="3">
                 <h6>Chapter 4</h6>
                 <a href="#interview" >Interview</a>
             </div>
             <br>
-            <div>
+            <div class="chapters" id="4">
                 <h6>Chapter 5</h6>
                 <a href="#effects_of_lack_of_sleep" >Effects of lack of sleep</a>
             </div>
             <br>
-            <div>
+            <div class="chapters" id="5">
                 <a href="#credits" >Credits</a>
             </div>
 
@@ -50,13 +52,15 @@
     </div>
 <!-- sidebar  end -->
 
-    <section class="intro-section" id="introduction">
+    <section class="intro-section   " id="introduction">
 
         <div  class="intro-section-first-container" >
-            <div class="main_logo-container">
-                <img  src="./assets/images/mainLogo.png" alt="">
+            <div class="main_logo-container parallax" >
+                <div class="lack_of_sleep-title-image"><img src="./assets/images/lackOfSleep.png" alt=""></div>
+                <div  class="eye-image"><img src="./assets/images/eye.png" alt=""></div>
+                <div class="scroll_down-image"><img src="./assets/images/scrollDown.png" alt=""></div>
             </div>
-
+            
             <div class="intro-section-footer">
                 <div>
                     <p>Georgian Institute of Public Affairs</p>
@@ -71,29 +75,69 @@
         </div>
 
         <div class="bed-image"> 
-            <!-- <img  src="./assets/images/bed.png" alt=""> -->
         </div>
-
     </section>
 
-  <section class="stage_of_sleep-section" id="stages_of_sleep">
+  <section class="stage_of_sleep-section " id="stages_of_sleep">
 
         <div class="stages stage_1">
 
             
             <div class="stage_of_sleep-container">
+
                 <div class="stage-title">
-                    <h3>Stages of sleep</h3>
+                    <p>Stages of sleep</p>
                 </div>
+
                 <div class="stages-main-image stage_1-image">
-                    <img width="60%" height="100%" src="./assets/images/sleepingMan3.png" alt="">
+                    <img  src="./assets/images/sleepingMan3.png" alt="">
                 </div>
-                <div>
-    
+
+                <div class="main-content">
+                    <div class="video-player">
+                        <audio src="assets/audio/audio.mp3" class="audio"  preload="metadata"></audio>
+                        <div class="controls">
+                        <div class="left-side-control">
+                            <div class="back">
+                            <img src="./assets/images/rewindBack.png" alt="">
+                            </div>
+                
+                            <div class="pause_play_button_container">
+                            <button class="play">
+                            </button>
+                            </div>
+                
+                            <div class="forward">
+                            <img src="./assets/images/rewindForward.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="progress" style="display: inline-block;">
+                            <span class="track"></span>
+                        </div>
+                
+                        <div class="sound-timing">
+                            <div class="sound-button">
+                
+                            <div class="sound_line first_line first"></div>
+                
+                            <div class="sound_line second_line second"></div>
+                
+                            <div class="sound_line third_line third"></div>
+                
+                            <div class="sound_line forth_line forth"></div>
+                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1>STAGE 1</h1>
+
+                <div class="stage-order">
+                    <p>STAGE 1</p>
                 </div>
+
             </div>
 
         </div>
@@ -103,16 +147,55 @@
             
             <div class="stage_of_sleep-container">
                 <div class="stage-title">
-                    <h3>Stages of sleep</h3>
+                    <p>Stages of sleep</p>
                 </div>
                 <div class="stages-main-image  stage_2-image">
-                    <img width="60%" height="100%" src="./assets/images/sleepingWomen.png" alt="">
+                    <img src="./assets/images/sleepingWomen.png" alt="">
                 </div>
-                <div>
-    
+
+                <div class="main-content">
+                    <div class="video-player">
+                        <audio src="assets/audio/audio.mp3" class="audio"  preload="metadata"></audio>
+                        <div class="controls">
+                        <div class="left-side-control">
+                            <div class="back">
+                            <img src="./assets/images/rewindBack.png" alt="">
+                            </div>
+                
+                            <div class="pause_play_button_container">
+                            <button class="play">
+                            </button>
+                            </div>
+                
+                            <div class="forward">
+                            <img src="./assets/images/rewindForward.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="progress" style="display: inline-block;">
+                            <span class="track"></span>
+                        </div>
+                
+                        <div class="sound-timing">
+                            <div class="sound-button">
+                
+                            <div class="sound_line first_line first"></div>
+                
+                            <div class="sound_line second_line second"></div>
+                
+                            <div class="sound_line third_line third"></div>
+                
+                            <div class="sound_line forth_line forth"></div>
+                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1>STAGE 2</h1>
+
+                <div class="stage-order">
+                    <p>STAGE 2</p>
                 </div>
             </div>
 
@@ -123,16 +206,55 @@
             
             <div class=" stage_of_sleep-container">
                 <div class="stage-title">
-                    <h3>Stages of sleep</h3>
+                    <p>Stages of sleep</p>
                 </div>
                 <div class="stages-main-image  stage_3-image">
-                    <img width="60%" height="100%" src="./assets/images/sleepingMan2.png" alt="">
+                    <img  src="./assets/images/sleepingMan2.png" alt="">
                 </div>
-                <div>
-    
+                
+                <div class="main-content">
+                    <div class="video-player">
+                        <audio src="assets/audio/audio.mp3" class="audio"  preload="metadata"></audio>
+                        <div class="controls">
+                        <div class="left-side-control">
+                            <div class="back">
+                            <img src="./assets/images/rewindBack.png" alt="">
+                            </div>
+                
+                            <div class="pause_play_button_container">
+                            <button class="play">
+                            </button>
+                            </div>
+                
+                            <div class="forward">
+                            <img src="./assets/images/rewindForward.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="progress" style="display: inline-block;">
+                            <span class="track"></span>
+                        </div>
+                
+                        <div class="sound-timing">
+                            <div class="sound-button">
+                
+                            <div class="sound_line first_line first"></div>
+                
+                            <div class="sound_line second_line second"></div>
+                
+                            <div class="sound_line third_line third"></div>
+                
+                            <div class="sound_line forth_line forth"></div>
+                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1>STAGE 3</h1>
+
+                <div class="stage-order" > 
+                    <p>STAGE 3</p>
                 </div>
             </div>
 
@@ -142,32 +264,69 @@
            
             <div class="stage_of_sleep-container">
                 <div class="stage-title">
-                    <h3>Stages of sleep</h3>
+                    <p>Stages of sleep</p>
                 </div>
                 <div class="stages-main-image  stage_4-image">
-                    <img width="60%" height="100%" src="./assets/images/sleepingMan1.png" alt="">
+                    <img  src="./assets/images/sleepingMan1.png" alt="">
                 </div>
-                <div>
-    
+               
+                <div class="main-content">
+                    <div class="video-player">
+                        <audio src="assets/audio/audio.mp3" class="audio"  preload="metadata"></audio>
+                        <div class="controls">
+                        <div class="left-side-control">
+                            <div class="back">
+                            <img src="./assets/images/rewindBack.png" alt="">
+                            </div>
+                
+                            <div class="pause_play_button_container">
+                            <button class="play">
+                            </button>
+                            </div>
+                
+                            <div class="forward">
+                            <img src="./assets/images/rewindForward.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="progress" style="display: inline-block;">
+                            <span class="track"></span>
+                        </div>
+                
+                        <div class="sound-timing">
+                            <div class="sound-button">
+                
+                            <div class="sound_line first_line first"></div>
+                
+                            <div class="sound_line second_line second"></div>
+                
+                            <div class="sound_line third_line third"></div>
+                
+                            <div class="sound_line forth_line forth"></div>
+                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1>STAGE 4</h1>
+
+                <div class="stage-order" >
+                    <p>STAGE 4</p>
                 </div>
             </div>
         </div>
     </section>  
 
-    <section class="interview-container" id="interview">
+    <section class="interview-container " id="interview">
         <div>
             <img width="100%" height="100%" src="./assets/images/clouds.png" alt="">
             <img width="100%" height="100%" src="./assets/images/boy.png" alt="">
         </div>
     </section>
 
-
-    <section class="benefits_of_sleep-container" id="circadian_rhythm">
+    <section class="benefits_of_sleep-container " id="circadian_rhythm">
         <div class="benefits_of_sleep-image">
-            <!-- <img width="100%" height="100%" src="./assets/images/blackPaternBackground.png" alt=""> -->
 
             <div class="first-section-paragraph">
                 <p>
@@ -178,7 +337,7 @@
             <div class="second-section-paragraph"></divclass>
                 <div class="main-title">
                     <p>
-                        ...NEW MEMORIES
+                        ... NEW MEMORIES
                     </p>
                    
                 </div>
@@ -198,7 +357,7 @@
         </div>
     </section> 
 
-    <section class="effects_of_lack_of_sleep-container" id="effects_of_lack_of_sleep">
+    <section class="effects_of_lack_of_sleep-container " id="effects_of_lack_of_sleep">
         <div class="effects_of_lack_of_sleep-image">
             <div class="first-section-paragraph">
                 <p>
@@ -208,20 +367,35 @@
             </div>
             <div class="body-common-container">
                 <div class="body-common-child-container">
-                    <div class="body-image-container">
-                    <div class="body-image-child-container">
-                        <img src="./assets/images/body.png" alt="">
+                    <div class="common">
+
+
+                        <div class="body_title-common-container">
+                            <div class="effects_of_lack_of_sleep">
+                                <img src="./assets/images/title.png" alt="">
+                            </div>
+                            <div class="body-image-container">
+                                <img src="./assets/images/body.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="high_blood_pressure">
+                                <p>HIGH BLOOD PRESSURE</p>
+                                <div>
+                                    <p >If you sleep less than five hours a <br>
+                                    night, your risk for high blood <br>
+                                    pressure increases.</p>
+                                </div>
+
+                            
+                            
+                        </div> 
+
+
                     </div>
+                    
+                    
                 </div>
-                <div class="high_blood_pressure">
-                    <h1>HIGH BLOOD PRESSURE</h1>
-                    <h5>
-                        If you sleep less than five hours a
-                        night, your risk for high blood
-                        pressure increases.
-                    </h5>
-                </div></div>
-                
             </div>
             <div class="effects_of_lack_of_sleep-footer">
                 <div>
@@ -236,25 +410,25 @@
         </div>
     </section> 
 
-
-
-    <section class="credits-container" id="credits">
+    <section class="credits-container " id="credits">
         <video autoplay muted loop id="myVideo">
             <source src="./assets/video/CreditsVideoAbstract.mp4" type="video/mp4">
         </video>
         <div class="credits-common-conatiner">
             <div class="authors-container">
                 <p class="credit-title">Authors</p>
-                <p>Keti Skhirtladze</p>
-                <p>Sharon De Graeve</p>
-                <p>Mariam Iremadze</p>
+                <p class="name">Keti Skhirtladze</p>
+                <p class="name">Sharon De Graeve</p>
+                <p class="name">Mariam Iremadze</p>
             </div>
             <div class="designe-container">
                 <p class="credit-title">Designer</p>
-                <p>Dato Msakhuradze</p>
+                <p class="name">Dato Msakhuradze</p>
             </div>
         </div>
     </section>
+
 </body>
-<script src="./script.js"></script>
+<script src="./assets/scripts/script.js"></script>
+<script src="./assets/scripts/player.js"></script>
 </html>
