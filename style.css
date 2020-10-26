@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6,p{
 }
 .intro-section-first-container{
     position: relative;
-    background-image: url(./assets/images/whiteBackground.png);
+    background-image: url(./assets/images/whitebackground.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
