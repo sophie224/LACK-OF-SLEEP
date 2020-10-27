@@ -329,11 +329,20 @@ a{
     width: 55%;
 }
 .credits-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
+
 #myVideo{
-    height: 100%;
-    width: 100%;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .credits-common-conatiner{
     position: absolute;
@@ -341,7 +350,7 @@ a{
     color: white;
     width: 100%;
     display: flex;
-    padding: 7% 0 0 4%;
+    padding: 7% 0 0 5%;
 }
 .designe-container{
     padding-left: 10%;
@@ -381,7 +390,7 @@ a{
     background: transparent;
     box-sizing: border-box;
     width: 0;
-    height: 11px;
+    height: 10px;
     /* margin-left: 15px; */
     border-color: transparent transparent transparent black;
     transition: 250ms all ease;
@@ -469,6 +478,7 @@ body .background .overlay .main-content .sound-timing .timing span {
 }
 .back, .forward{
     width: 20px;
+    height: 26px;
 }
 .back img, .forward img{
     width: 100%;

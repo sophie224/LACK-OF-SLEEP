@@ -2,18 +2,14 @@ const audios = document.querySelectorAll('.audio');
 const playPauseButtons = document.querySelectorAll('.play');
 const forwardButtons = document.querySelectorAll('.forward');
 const backButtons = document.querySelectorAll('.back');
-
 let duration = 0;
 let progresses = document.querySelectorAll('.progress');
-// progress.value = 0;
-// let isPLaying = !audio.paused;
 let durationTime = document.querySelector('.duration-time');
 let currentTime = document.querySelector('.current-time');
 let progress = document.querySelector('.progress');
 let soundControls = document.getElementsByClassName('sound_line');
 let hidden =  document.querySelectorAll('.class-hidden');
 const backButton=document.querySelector('.back');
-// const forwardButton=document.querySelector('.forward');
 
 const addPlayListeners = () => {
     for (let i = 0; i < playPauseButtons.length; i++) {
@@ -118,12 +114,6 @@ const addSoundControlListener = () => {
     }
 }
 
-addPlayListeners();
-addForwardListeners();
-addBackListeners();
-addAudioListeners();
-addProgressListeners();
-addSoundControlListener();
 
 for(let i =0; i<soundControls.length; i++){
     soundControls[i].classList.add('active');
@@ -134,3 +124,9 @@ const progressHandler = (audio, progress) => {
     let percentage = (audio.currentTime / audio.duration) * 100;
     progress.children[0].style.width = percentage + '%';
 };
+addPlayListeners();
+addForwardListeners();
+addBackListeners();
+addAudioListeners();
+addProgressListeners();
+addSoundControlListener();
