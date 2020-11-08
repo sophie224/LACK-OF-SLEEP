@@ -12,7 +12,6 @@ function w3_close() {
 (function($) {
 	$.fn.extend({
             jParallax: function(opt) {
-                  console.log(1)
                   var defaults = { moveFactor: 5, targetContainer: 'body' },
                         o = $.extend(defaults, opt);
                   return this.each(function() {
@@ -51,3 +50,57 @@ $(".chapters").click(function() {
       }
 });
 
+
+
+$(".each_organ").mouseover(function() {
+      $(".title").text('');
+      $(".desription p").text('');
+      let currentOrganId=parseInt($(this).attr("id"));
+      for (let i = 0; i < appropriateOrganInfoArra.length; i++) {
+            console.log("appropriateOrganInfoArra[i].id",appropriateOrganInfoArra[i].id)
+            if(currentOrganId===appropriateOrganInfoArra[i].id){
+                  $(".title").append(appropriateOrganInfoArra[i].title);
+                  $(".desription p").append(appropriateOrganInfoArra[i].description);
+                  $(".high_blood_pressure").attr("id",`info${i}`);
+                  $("..high_blood_pressure-parent_container").css("display","flex");
+            }   
+      }
+});
+
+let appropriateOrganInfoArra=[
+      {
+            id:0,
+            title:'memory issues',
+            description:'Sleep deprivation prevents your brain from forming connections which helps us process and remember new information. It can negatively impact both short- and long-term memory, increase forgetfulness and risk of alzheimer’s disease.'
+      },
+      {
+            id:1,
+            title:'weakened immunity',
+            description:'Too little sleep weakens your immune system. You are more likely to get sick when you are exposed to germs.'
+      },
+      {
+            id:2,
+            title:'risk for heart disease',
+            description:'Sleep deprivation may lead to higher levels of chemical linked to inflammation, which play roles in heart disease. Besides, in spring, when people lose one hour of sleep, a subsequent 24% increase in heart attacks occurs the following day.'
+      },
+      {
+            id:3,
+            title:'weight gain',
+            description:'With sleep deprivation, the chemicals that signal to your brain that you are full are off balance. As a result, you are more likely to overindulge even when you have had enough to eat.'
+      },
+      {
+            id:4,
+            title:'poor balance',
+            description:'Lack of sleep  can affect your balance and coordination, making you more prone to falls and other physical accidents.'
+      },
+      {
+            id:5,
+            title:'risk for diabetes',
+            description:'A lack of sleep affects your body’s release of insulin, a blood sugar-lowering hormone. People who do not get enough sleep have higher blood sugar levels and an increased risk for type 2 diabetes.'
+      },
+      {
+            id:6,
+            title:'low sex drive',
+            description:'Lack of sleep disrupts the creation of hormones like estrogen and testosterone. Therefore people who do not get enough sleep, often have a lower libido.'
+      }
+]

@@ -1,9 +1,9 @@
 html {
     scroll-behavior: smooth;
-  }
-  *:focus{
-      outline:none;
-  }
+}
+*:focus{
+    outline:none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -11,6 +11,9 @@ body{
 h1, h2, h3, h4, h5, h6,p{
     margin: 0 !important;
     padding: 0;
+}
+audio, canvas, progress, video{
+    display:flex;
 }
 @font-face {
     font-family: 'Roboto Bold';
@@ -267,7 +270,10 @@ a{
     width: 100%;
     position: absolute;
     left: 60%;
-    margin-top: -11%;
+    /* margin-top: -11%; */
+}
+.desription p{
+    width: 35%;
 }
 .high_blood_pressure > p{
     font-family: 'Roboto Light';
@@ -286,6 +292,19 @@ a{
 .high_blood_pressure h5{
     width: 52%;
 } */
+.high_blood_pressure-parent_container{
+    display: none;
+}
+.high_blood_pressure-parent_container:before{
+    content: '';
+    width: 20%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    /* left: 0;
+    top: 50%; */
+    z-index: 1;
+    /* display: none; */
+}
 .common{
     display: flex;
     justify-content: center;
@@ -335,7 +354,6 @@ a{
     justify-content: center;
     position: relative;
 }
-
 #myVideo{
     object-fit: cover;
     width: 100vw;
@@ -527,4 +545,101 @@ body .background .overlay .main-content .sound-timing .timing span {
 }
 .sound-timing{
     margin-left: 15px;
+}
+
+
+/*body style*/
+.main-body-container{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 500px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.body_image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* .body_image{
+    position: relative;
+    background-image: url(./assets/images/Layer\ 21.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+} */
+.organ-common-container div{
+    display: inline-block;
+    position: absolute;
+    opacity: 0.4;
+}
+.organ-common-container div:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.organ-common-container div svg{
+    width: 100%;
+    height: 100%;
+}
+.brain-container{
+    top: 1%;
+    left: 43%;
+    width: 25%;
+}
+.lung-container{
+    width: 40%;
+    top: 16%;
+    left: 30%;
+}
+.veins-container{
+    top: 18%;
+    width: 48%;
+    left: 47%;
+}
+.heart-container{
+    width: 13%;
+    top: 23%;
+    left: 43%;
+}
+.stomach-container{
+    width: 40px;
+    top: 28%;
+    left: 45%;
+}
+.right-leg{
+    width: 81px;
+    top: 39%;
+    left: 28%;
+}
+.left-leg{
+    width: 31px;
+    top: 44%;
+    left: 27%;
+}
+.liver-container{
+    top: 29%;
+    left: 30%;
+    height: 100px;
+    width: 70px;
+}
+.pancreas-container{
+    width: 27px;
+    top: 32%;
+    left: 40%;
+}
+.ovary-container{
+    width: 35px;
+    height: 35px;
+    top: 42%;
+    left: 40%;
+}
+.each_organ{
+    cursor: pointer;
 }
