@@ -52,20 +52,41 @@ $(".chapters").click(function() {
 
 
 
-$(".each_organ").mouseover(function() {
-      $(".title").text('');
-      $(".desription p").text('');
-      let currentOrganId=parseInt($(this).attr("id"));
-      for (let i = 0; i < appropriateOrganInfoArra.length; i++) {
-            console.log("appropriateOrganInfoArra[i].id",appropriateOrganInfoArra[i].id)
-            if(currentOrganId===appropriateOrganInfoArra[i].id){
-                  $(".title").append(appropriateOrganInfoArra[i].title);
-                  $(".desription p").append(appropriateOrganInfoArra[i].description);
-                  $(".high_blood_pressure").attr("id",`info${i}`);
-                  $("..high_blood_pressure-parent_container").css("display","flex");
-            }   
-      }
+// $(".each_organ").mouseover(function(e) {
+//       let x;
+//       let y;
+//       $(".title").text('');
+//       $(".desription p").text('');
+//       let currentOrganId=parseInt($(this).attr("id"));
+//       for (let i = 0; i < appropriateOrganInfoArra.length; i++) {
+//             $(".high_blood_pressure-parent_container").removeClass(`info${i}`);
+//             if(currentOrganId===appropriateOrganInfoArra[i].id){
+//                   $(".title").append(appropriateOrganInfoArra[i].title);
+//                   $(".desription p").append(appropriateOrganInfoArra[i].description);
+//                   $(".high_blood_pressure").attr("id",`info${i}`);
+//                   $(".high_blood_pressure-parent_container").addClass(`info${i}`)
+//                   $(".high_blood_pressure-parent_container").css("display","flex");
+//                   x = e.clientX;
+//                   y = e.clientY;
+//                   console.log("x",x," ", " y",y);
+//             }   
+//             else{
+//             }
+//       }
+// });
+$(".each_organ").mouseover(function(e) {
+
 });
+// function getCordinatsOnMousover(currentOrganId){
+//       let id=document.getElementById("info0");
+//       id.addEventListener('mousemove', function(e){
+//             let x = e.clientX;
+//             let y = e.clientY;
+//             console.log("x",x);
+//             console.log("y",y);
+//       })
+// }
+
 
 let appropriateOrganInfoArra=[
       {

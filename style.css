@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6,p{
 audio, canvas, progress, video{
     display:flex;
 }
+hr{
+    border-top: 1px solid black !important;
+    width: 100%;
+}
 @font-face {
     font-family: 'Roboto Bold';
     src: url('./assets/fonts/Roboto-Bold.woff2') format('woff2'),
@@ -266,12 +270,16 @@ a{
     justify-content: center;
     position: relative;
 }
-.high_blood_pressure{
+.before_title_line{
+    width: 20%;
+}
+/* .high_blood_pressure{
     width: 100%;
     position: absolute;
     left: 60%;
-    /* margin-top: -11%; */
-}
+    margin-top: -25px;
+    margin-left: 25px;
+} */
 .desription p{
     width: 35%;
 }
@@ -293,23 +301,34 @@ a{
     width: 52%;
 } */
 .high_blood_pressure-parent_container{
-    display: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 217px;
+    left: 49%;
 }
-.high_blood_pressure-parent_container:before{
+/* .high_blood_pressure-parent_container>div:first-child:before{
     content: '';
     width: 20%;
     border-bottom: solid 1px black;
     position: absolute;
     /* left: 0;
     top: 50%; */
-    z-index: 1;
+    /* z-index: 1; */
     /* display: none; */
-}
+/* } */ 
 .common{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
+/* .common > div:not(:first-child){
+    width: 100%;
+    height: 100%;
+} */
 .effects_of_lack_of_sleep{
     position: absolute;
     left: 32%;
@@ -354,7 +373,7 @@ a{
     justify-content: center;
     position: relative;
 }
-#myVideo{
+#myVideo,#myVideo1,#myVideo2,#myVideo3{
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -496,7 +515,7 @@ body .background .overlay .main-content .sound-timing .timing span {
 }
 .back, .forward{
     width: 20px;
-    height: 26px;
+    height: 16px;
 }
 .back img, .forward img{
     width: 100%;
@@ -542,6 +561,7 @@ body .background .overlay .main-content .sound-timing .timing span {
 }
 .left-side-control{
     display: flex;
+    line-height: 0.5;
 }
 .sound-timing{
     margin-left: 15px;
@@ -577,7 +597,10 @@ img{
 .organ-common-container div{
     display: inline-block;
     position: absolute;
+}
+.organ-common-container div img{
     opacity: 0.4;
+
 }
 .organ-common-container div:hover{
     opacity: 1;
@@ -643,3 +666,11 @@ img{
 .each_organ{
     cursor: pointer;
 }
+
+
+
+
+/* 
+.info0{
+    margin-top: 237px;
+} */
