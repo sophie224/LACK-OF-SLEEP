@@ -318,12 +318,6 @@ a{
     /* z-index: 1; */
     /* display: none; */
 /* } */ 
-/* .before-container:before{
-    content: '';
-    width: 20%;
-    border-bottom: solid 1px black;
-    position: absolute;
-} */
 .common{
     display: flex;
     justify-content: center;
@@ -350,7 +344,7 @@ a{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* padding: 0 4%; */
+    padding: 0 4%;
 }
 .intro-section-footer p, .stage-title p , .effects_of_lack_of_sleep-footer p{
     font-size:20px;
@@ -381,7 +375,7 @@ a{
 }
 #myVideo,#myVideo1,#myVideo2,#myVideo3{
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -393,7 +387,7 @@ a{
     color: white;
     width: 100%;
     display: flex;
-    /* padding: 7% 0 0 5%; */
+    padding: 7% 0 0 5%;
 }
 .designe-container{
     padding-left: 10%;
@@ -591,22 +585,12 @@ img{
     position: relative;
 }
 
-/* .body_image{
-    position: relative;
-    background-image: url(./assets/images/Layer\ 21.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-} */
 .organ-common-container div{
     display: inline-block;
     position: absolute;
 }
 .organ-common-container div img{
     opacity: 0.4;
-
 }
 .organ-common-container div:hover{
     opacity: 1;
@@ -618,12 +602,14 @@ img{
     height: 100%;
 }
 .brain-container{
+    display: flex;
+    width: 900px;
+    height: 500px;
     top: 1%;
     left: 43%;
-    width: 25%;
 }
 .lung-container{
-    width: 40%;
+    width: 40% !important;
     top: 16%;
     left: 30%;
 }
@@ -669,21 +655,16 @@ img{
     top: 42%;
     left: 40%;
 }
-.brain-container{
+.each_organ{
     cursor: pointer;
-    width: 550px;
-    height: 350px;
 }
-.brain-photo{
-    width: 8%;
-}
-.organ-description{
-    margin-left: 15%;
-    width: 100%;
-    height: 100%;
-    display: none !important;
-    
 
+.organ-description{
+    position: absolute;
+    /* margin-left: 20%; */
+    width: 500px;
+    height: 500px;
+    display: none !important;
 }
 .activeDescription{
     display:flex !important;
@@ -699,16 +680,62 @@ img{
     margin-left: 25%;
 }
 .title_description-container p{
-    width: 70%;
+    width: 100%;
+}
+.title_description-container p:nth-child(1){
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.title_description-container p:nth-child(2){
+    font-size: 1.3rem;
 }
 .organ-photo img:hover{
     opacity: 1;
     transition: 0.7s;
 }
-/* .organ-photo img:hover .organ-description{
-    transition: all .2s ease-in-out !important;
-} */
+
+
 /* 
 .info0{
     margin-top: 237px;
 } */
+
+
+/* .brain-container,.veins-container,.heart-container{
+    width: 550px;
+    height: 350px;
+} */
+.brain-photo{
+    width: 5%;
+}
+.veins-photo {
+    width: 95%;
+}
+.veins-photo img{
+    z-index: 1;
+}
+.heart-photo {
+    width:100%;
+}
+.organ-description#organ0{
+    left: 130px;
+}
+.organ-description#organ1{
+    left: 95px;
+}
+.organ-description#organ2{
+    left: 95px;
+}
+.organ-description#organ3{
+    left: 78px;
+}
+.organ-description#organ4{
+    left: 120px;
+    top: 126px;
+}
+.organ-description#organ5{
+    left: 50px;
+}
+.organ-description#organ6{
+    left: 65px;
+}
