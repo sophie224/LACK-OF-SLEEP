@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6,p{
     padding: 0;
 }
 audio, canvas, progress, video{
-    display:flex;
+    display:block !important;
 }
 hr{
     border-top: 1px solid black !important;
@@ -346,12 +346,12 @@ a{
     width: 100%;
     padding: 0 4%;
 }
-.intro-section-footer p, .stage-title p , .effects_of_lack_of_sleep-footer p{
-    font-size:20px;
+.intro-section-footer > div > a, .stage-title p , .effects_of_lack_of_sleep-footer p{
+    font-size:25px;
     font-family: 'Roboto Light';
     font-weight: bold;
 }
-.effects_of_lack_of_sleep-footer p,.intro-section-footer p{
+.effects_of_lack_of_sleep-footer p,.intro-section-footer div> a{
     font-weight: bold;
 }
 .stage-order{
@@ -377,10 +377,11 @@ a{
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
 }
+
 .credits-common-conatiner{
     position: absolute;
     top: 5%;
